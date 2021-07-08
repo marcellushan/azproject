@@ -9,6 +9,6 @@ from .models import Athlete, Family
 def home_view(request, *args, **kwargs):
     families = Family.objects.all()
     # my_context={
-    #     "my_text": "Az is the best there is!"
+    #     "my_text": "Az is the best  is!"
     # } 
     return render(request, "home.html", {'families' : families})
